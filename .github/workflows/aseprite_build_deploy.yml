@@ -13,6 +13,11 @@ env:
   BUILD_TYPE: Release
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Hello
+        run: echo "Hello World"
   check-version:
     name: Check latest Aseprite release
     runs-on: ubuntu-latest
